@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Lacquer&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Concert+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Marck+Script&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(32,32,32);
+}
+
+#logo {
+    padding-left: 20px;
+    padding-bottom: 5px;
+    font-family: 'Concert One';
+}
+
+#font {
+    font-family: 'Concert One';
+    font-size: 17px;
+    color: white;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+    z-index: 100;
+  }
+
+.ads {
+    position: fixed;
+    left: 0;
+    bottom: 30px;
+    padding: 30px;
+    height: 80px;
+    width: 100%;
+    background-color: rgb(39, 39, 39);
+    text-align: center;
+    z-index: 100;
+}
+
+.card {
+      width: 300px;
+}
+
+#menu-mobile {
+    background-color: rgb(39, 39, 39);
+}
+
+.side-nav li a:hover {
+    background-color: rgb(56, 56, 56);
+    transition: all 0.5s;
+}
+
+#desc {
+    margin-top: 30px;
+    padding: 15px;
+    border-radius: 20px;
+    color: rgb(163, 163, 163);
+    text-align: center;
+    animation: infinite flash 2s;
+}
+
+.footer a {
+    padding: 2px;
+}
+
+@keyframes flash {
+    0% {
+        color: rgba(163, 163, 163, 0.863);
+    }
+    10% {
+        color: rgba(163, 163, 163, 0.774);
+    }
+    20% {
+        color: rgba(202, 202, 202, 0.801);
+    }
+    50% {
+        color: rgba(212, 212, 212, 0.253);
+    }
+    60% {
+        color: rgb(218, 218, 218);
+    }
+    70% {
+        color: rgba(163, 163, 163, 0.863);
+    }
+    80% {
+        color: rgba(163, 163, 163, 0.774);
+    }
+    100% {
+        color: rgba(202, 202, 202, 0.801);
+    }
+}
+
+
+#desc1 {
+    padding: 5px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+ /* label focus color */
+ .input-field input[type=email]:focus + label {
+    color: rgb(65, 134, 238);
+}
+/* label underline focus color */
+  .input-field input[type=email]:focus {
+    border-bottom: 1px solid rgb(48, 123, 236);
+    box-shadow: 0 1px 0 0 rgb(65, 128, 221);
+  }
