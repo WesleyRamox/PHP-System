@@ -26,7 +26,7 @@
                 <i class="fa fa-bars"></i>
             </a>
             <ul class="left hide-on-med-and-down">
-                <li><a href="#" id="font">Home</a></li>
+                <li><a href="./index.php" id="font">Home</a></li>
                 <li><a href="#" id="font">Posts</a></li>
                 <li><a href="./about.php" id="font">About</a></li>
             </ul>
@@ -34,7 +34,7 @@
                 <li><a class="waves-effect waves-light btn">Large Button</a></li>
             </ul> -->
             <ul class="side-nav" id="menu-mobile">
-                <li><a href="#" class="" id="font"><i class="fa fa-home" style="color: #ffffff"></i>Home</a></li>
+                <li><a href="./index.php" class="" id="font"><i class="fa fa-home" style="color: #ffffff"></i>Home</a></li>
                 <li><a href="#" class="" id="font"><i class="fab fa-buffer" style="color: #ffffff"></i>Posts</a></li>
                 <li><a href="./about.php" class="" id="font"><i class="fa fa-mail-bulk" style="color: #ffffff"></i>About</a></li>
             </ul>
@@ -47,10 +47,9 @@
             <thead>
                 <tr>
                     <p id="desc1">
-                        Meu nome é Wesley tenho 14 anos, 
-                        Fiz este site para ajudar quem precisa
-                        e treinar programação!
-                        se quiser me ajudar neste projeto basta me seguir no instagram 
+                    Meu nome é Wesley, tenho 14 anos de idade; Fiz este site para ajudar a quem precisa de uma razão para viver, e para minha pessoa treinar programação.
+                    Nas próximas semanas devo atualizar este site, fiquem atentos, pois ainda está em seu começo;
+                    Esse projeto é bastante ambicioso.
                         <br>
                         <a href="https://www.instagram.com/wesley.ramox/">@Wesley.Ramox</a></p>
                 </tr>

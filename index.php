@@ -48,7 +48,7 @@
             <thead>
                 <tr>
                     <img src="./Images/sad.png" id="sad" height="200px;">
-                    <p id="desc">Estou aqui para ajudar pessoas que sofre de depressão.</p>
+                    <p id="desc">Site criado para ajudar pessoas, porém em específco para quem sofre de depressão e também a motivá-los.</p>
                 </tr>
                 </thead>
         </table>
@@ -59,7 +59,7 @@
     <div class="row">
     <form class="col s12 m6 push-m3 emails" method="POST" action="Functions/email.php">
       <div class="row push-m3">
-        <p id="desc1">Está afim de receber E-mails com Mensagens motivadoras?</p>
+        <p id="desc1">Olá, Você gostaria de receber E-mails motivadores para lhe ajudar?</p>
         <div class="input-field col s12">
         <p class="label" style="color: #ffffff;">Nome:</p>
         <input id="nome" type="text" name="nome" class="validate" required>
