@@ -4,6 +4,14 @@
 
     // Message
     include_once './Functions/message.php';
+
+    $nome = $_POST['nome'];
+    $email= "mafik.contato@gmail.com";
+    $mensagem= "Olá tudo bem?";
+    $to = $_POST['email'];
+    $assunto = "Mensagem de ".$email."com";
+    mail($to,$assunto,$mensagem);
+    
 ?>
 
 <!DOCTYPE html>
