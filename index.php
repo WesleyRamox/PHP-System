@@ -5,12 +5,35 @@
     // Message
     include_once './Functions/message.php';
 
-    $nome = $_POST['nome'];
-    $email= "mafik.contato@gmail.com";
-    $mensagem= "Olá tudo bem?";
-    $to = $_POST['email'];
-    $assunto = "Mensagem de ".$email."com";
-    mail($to,$assunto,$mensagem);
+    // Recebendo dados do formulário
+    $name = $_POST['name'];
+    $email = "mafik.contato@gmail.com";
+    $message = $_POST['mensagem'];
+    $subject = "Mensagem do Site";
+    
+    $headers = "Content-Type: text/html; charset=utf-8\r\n";
+    $headers .= "From: $email\r\n";
+    $headers .= "Reply-To: $email\r\n";
+    
+    // Dados que serão enviados
+    $corpo = "Formulário da página de contato <br>";
+    $corpo .= "Nome: " . $name . " <br>";
+    $corpo .= "Email: " . $email . " <br>";
+    $corpo .= "Mensagem: " . $message . " <br>";
+    
+    // Email que receberá a mensagem (Não se esqueça de substituir)
+    $email_to = $_POST['email'];
+    
+    // Enviando email
+    $status = mail($email_to, mb_encode_mimeheader($subject, "utf-8"), $corpo, $headers);
+    
+    if ($status):
+      // Enviada com sucesso
+      header('location:index.php?status=sucesso');
+    else:
+      // Se der erro
+      header('location:index.php?status=erro');
+    endif;
     
 ?>
 
@@ -21,6 +44,7 @@
     <script src="https://kit.fontawesome.com/2653944b87.js" crossorigin="anonymous"></script>
     <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css"/>
     <link rel="stylesheet" href="./Styles/style.css">
+    <script data-ad-client="ca-pub-2419216747312766" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="shortcut icon" href="Images/sad.png" type="image/x-icon">
     <title>Can i Help?</title>
