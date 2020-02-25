@@ -72,9 +72,9 @@
     </div>
     </div>
 
-    <div class="ads">
+    <!-- <div class="ads">
         
-    </div>
+    </div> -->
     <div class="footer blue darken-2">
         <a href="https://www.instagram.com/wesley.ramox/"><i class="fab fa-instagram" style="color: #ffea00"></i></a>
         <a href="#"><i class="fab fa-github" style="color: #ffea00"></i></a>
