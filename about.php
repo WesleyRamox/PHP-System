@@ -27,7 +27,7 @@
             </a>
             <ul class="left hide-on-med-and-down">
                 <li><a href="./index.php" id="font">Home</a></li>
-                <li><a href="#" id="font">Posts</a></li>
+                <li><a href="./posts.php" id="font">Posts</a></li>
                 <li><a href="./about.php" id="font">About</a></li>
             </ul>
             <!-- <ul class="right hide-on-med-and-down">
@@ -35,12 +35,16 @@
             </ul> -->
             <ul class="side-nav" id="menu-mobile">
                 <li><a href="./index.php" class="" id="font"><i class="fa fa-home" style="color: #ffffff"></i>Home</a></li>
-                <li><a href="#" class="" id="font"><i class="fab fa-buffer" style="color: #ffffff"></i>Posts</a></li>
+                <li><a href="./posts.php" class="" id="font"><i class="fab fa-buffer" style="color: #ffffff"></i>Posts</a></li>
                 <li><a href="./about.php" class="" id="font"><i class="fa fa-mail-bulk" style="color: #ffffff"></i>About</a></li>
             </ul>
         </div>
     </nav>
-    <div class="row">
+
+    <br>
+
+
+  <div class="row">
     <div class="col s12 m6 push-m3 center">
         <br>
         <table class="center-align">
@@ -63,9 +67,6 @@
     <br>
     <br>
 
-    <!-- <div class="ads">
-        
-    </div> -->
     <div class="footer blue darken-2">
         <a href="https://www.instagram.com/wesley.ramox/"><i class="fab fa-instagram" style="color: #ffea00"></i></a>
         <a href="#"><i class="fab fa-github" style="color: #ffea00"></i></a>
@@ -78,6 +79,10 @@
     <script>
     $(function(){
         $(".button-collapse").sideNav();
+    });
+
+    $(document).ready(function(){
+      $('.slider').slider();
     });
     </script>
 </body>

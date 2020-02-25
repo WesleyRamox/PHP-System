@@ -1,9 +1,6 @@
 <?php
     // Conexão
     include_once './Functions/db_connect.php';
-
-    // Message
-    include_once './Functions/message.php';
 ?>
 
 <!DOCTYPE html>
@@ -35,52 +32,42 @@
             </ul> -->
             <ul class="side-nav" id="menu-mobile">
                 <li><a href="./index.php" class="" id="font"><i class="fa fa-home" style="color: #ffffff"></i>Home</a></li>
-                <li><a href="./posts.php" class="" id="font"><i class="fab fa-buffer" style="color: #ffffff"></i>Posts</a></li>
+                <li><a href="#" class="" id="font"><i class="fab fa-buffer" style="color: #ffffff"></i>Posts</a></li>
                 <li><a href="./about.php" class="" id="font"><i class="fa fa-mail-bulk" style="color: #ffffff"></i>About</a></li>
             </ul>
         </div>
     </nav>
 
-    <div class="row">
-    <div class="col s12 m6 push-m3 center">
-        <br>
-        <table class="center-align">
-            <thead>
-                <tr>
-                    <img src="./Images/sad.png" id="sad" height="200px;">
-                    <p id="desc">Site criado para ajudar pessoas, porém em específco para quem sofre de depressão e também a motivá-los.</p>
-                </tr>
-                </thead>
+    <br>
+
+<div class="row">
+    <div class="col s12 m6 push-m3">
+        <h3 class="light" id="font" style="font-size: 50px; color: #FFFFFF">POSTAGENS</h3>
+        <table class="striped">
+            
+                <?php 
+                    $sql = "SELECT * FROM posts";
+                    $resultado = mysqli_query($connect, $sql);
+
+                    if(mysqli_num_rows($resultado) > 0):
+                    while($dados = mysqli_fetch_array($resultado)): 
+                ?>
+
+                <ul class="collection with-header">
+                    <li class="collection-header light-blue accent-3"><h5><?php echo $dados['titulo']; ?></h5></li>
+                    <li class="collection-item"><?php echo $dados['descricao']; ?></li>
+                    <li class="postador">Postado por: @<?php echo $dados['criador'];?></li>
+                </ul>
+
+
+                <?php 
+                    endwhile;
+                    endif; ?>
         </table>
+        <br>
     </div>
-    </div>
+</div>
 
-    <div class="container">
-    <div class="row">
-    <form class="col s12 m6 push-m3 emails" method="POST" action="Functions/email.php">
-      <div class="row push-m3">
-        <p id="desc1">Olá, Você gostaria de receber E-mails motivadores para lhe ajudar?</p>
-        <div class="input-field col s12">
-        <p class="label" style="color: #ffffff;">Nome:</p>
-        <input id="nome" type="text" name="nome" class="validate" required>
-        <p class="label" style="color: #ffffff;">Email:</p>
-          <input id="email" type="email" name="email" class="validate" required>
-          <input type="submit" class="btn blue" value="Enviar" name="btn-enviar">
-        </div>
-      </div>
-    </form>
-    </div>
-    </div>
-
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
-    <!-- <div class="ads">
-        
-    </div> -->
     <div class="footer blue darken-2">
         <a href="https://www.instagram.com/wesley.ramox/"><i class="fab fa-instagram" style="color: #ffea00"></i></a>
         <a href="#"><i class="fab fa-github" style="color: #ffea00"></i></a>
@@ -93,6 +80,10 @@
     <script>
     $(function(){
         $(".button-collapse").sideNav();
+    });
+
+    $(document).ready(function(){
+      $('.slider').slider();
     });
     </script>
 </body>

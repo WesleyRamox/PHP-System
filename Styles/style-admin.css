@@ -161,3 +161,13 @@ input {
     background-color: rgba(85, 85, 85, 0.596);
     padding: 5px;
 }
+
+   /* label focus color */
+   .input-field input[type=text]:focus + label {
+    color: rgb(65, 134, 238);
+}
+/* label underline focus color */
+  .input-field input[type=text]:focus {
+    border-bottom: 1px solid rgb(48, 123, 236);
+    box-shadow: 0 1px 0 0 rgb(65, 128, 221);
+  }
