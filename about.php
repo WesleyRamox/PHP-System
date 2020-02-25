@@ -26,7 +26,7 @@
                 <i class="fa fa-bars"></i>
             </a>
             <ul class="left hide-on-med-and-down">
-                <li><a href="#" id="font">Home</a></li>
+                <li><a href="index.php" id="font">Home</a></li>
                 <li><a href="#" id="font">Posts</a></li>
                 <li><a href="./about.php" id="font">About</a></li>
             </ul>
@@ -34,7 +34,7 @@
                 <li><a class="waves-effect waves-light btn">Large Button</a></li>
             </ul> -->
             <ul class="side-nav" id="menu-mobile">
-                <li><a href="#" class="" id="font"><i class="fa fa-home" style="color: #ffffff"></i>Home</a></li>
+                <li><a href="index.php" class="" id="font"><i class="fa fa-home" style="color: #ffffff"></i>Home</a></li>
                 <li><a href="#" class="" id="font"><i class="fab fa-buffer" style="color: #ffffff"></i>Posts</a></li>
                 <li><a href="./about.php" class="" id="font"><i class="fa fa-mail-bulk" style="color: #ffffff"></i>About</a></li>
             </ul>
