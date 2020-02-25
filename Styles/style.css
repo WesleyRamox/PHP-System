@@ -26,7 +26,7 @@ body {
 }
 
 .footer {
-    /* position: fixed; */
+    position: fixed;
     left: 0;
     bottom: 0;
     padding: 5px;
