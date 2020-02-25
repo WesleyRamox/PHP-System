@@ -40,38 +40,24 @@
             </ul>
         </div>
     </nav>
-
     <div class="row">
     <div class="col s12 m6 push-m3 center">
         <br>
         <table class="center-align">
             <thead>
                 <tr>
-                    <img src="./Images/sad.png" id="sad" height="200px;">
-                    <p id="desc">Estou aqui para ajudar pessoas que sofre de depressão.</p>
+                    <p id="desc1">
+                        Meu nome é Wesley tenho 14 anos, 
+                        Fiz este site para ajudar quem precisa
+                        e treinar programação!
+                        se quiser me ajudar neste projeto basta me seguir no instagram 
+                        <br>
+                        <a href="https://www.instagram.com/wesley.ramox/">@Wesley.Ramox</a></p>
                 </tr>
                 </thead>
         </table>
     </div>
     </div>
-
-    <div class="container">
-    <div class="row">
-    <form class="col s12 m6 push-m3 emails" method="POST" action="Functions/email.php">
-      <div class="row push-m3">
-        <p id="desc1">Está afim de receber E-mails com Mensagens motivadoras?</p>
-        <div class="input-field col s12">
-        <p class="label" style="color: #ffffff;">Nome:</p>
-        <input id="nome" type="text" name="nome" class="validate" required>
-        <p class="label" style="color: #ffffff;">Email:</p>
-          <input id="email" type="email" name="email" class="validate" required>
-          <input type="submit" class="btn blue" value="Enviar" name="btn-enviar">
-        </div>
-      </div>
-    </form>
-    </div>
-    </div>
-
     <br>
     <br>
     <br>
