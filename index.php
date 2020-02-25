@@ -1,6 +1,9 @@
 <?php
     // Conexão
-    include_once 'Functions/db_connect.php';
+    include_once './Functions/db_connect.php';
+
+    // Message
+    include_once './Functions/message.php';
 ?>
 
 <!DOCTYPE html>
@@ -15,6 +18,7 @@
     <title>Can i Help?</title>
 </head>
 <body>    
+    
     <nav class="blue darken-2">
         <div class="nav-wrapper">
             <a href="#" class="brand-logo center" id="logo">CAN i HELP?</a>
@@ -57,8 +61,10 @@
       <div class="row push-m3">
         <p id="desc1">Está afim de receber E-mails com Mensagens motivadores?</p>
         <div class="input-field col s12">
+        <p class="label" style="color: #ffffff;">Nome:</p>
+        <input id="nome" type="text" name="nome" class="validate" required>
+        <p class="label" style="color: #ffffff;">Email:</p>
           <input id="email" type="email" name="email" class="validate" required>
-          <label for="email">Email</label>
           <input type="submit" class="btn blue" value="Enviar" name="btn-enviar">
         </div>
       </div>
@@ -74,8 +80,6 @@
         <a href="#"><i class="fab fa-github" style="color: #ffea00"></i></a>
         <p style="color: #ffffff;">Desenvolvido por <span style="color: #ffea00">Wesley Ramos</span></p>
     </div>
-
-
 
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>

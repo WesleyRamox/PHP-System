@@ -115,3 +115,17 @@ body {
     border-bottom: 1px solid rgb(48, 123, 236);
     box-shadow: 0 1px 0 0 rgb(65, 128, 221);
   }
+
+   /* label focus color */
+ .input-field input[type=text]:focus + label {
+    color: rgb(65, 134, 238);
+}
+/* label underline focus color */
+  .input-field input[type=text]:focus {
+    border-bottom: 1px solid rgb(48, 123, 236);
+    box-shadow: 0 1px 0 0 rgb(65, 128, 221);
+  }
+
+.label {
+    margin-bottom: -10px;
+}

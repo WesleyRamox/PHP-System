@@ -18,14 +18,15 @@ require_once 'db_connect.php';
 if(isset($_POST['btn-enviar'])):
     
     $email = clear($_POST['email']);
+    $nome = clear($_POST['nome']);
 
-    $sql = "INSERT INTO emails (email) VALUES ('$email') ";
+    $sql = "INSERT INTO emails (email, nome) VALUES ('$email', '$nome') ";
 
     if(mysqli_query($connect, $sql)):
-        echo "Enviado com Sucesso!";
+        $_SESSION['mensagem'] = "Cadastrado com sucesso!";
         header('Location: ../index.php');
     else:
-        echo "Erro ao Enviar";
+        $_SESSION['menssagem'] = "Erro ao cadastrar";
         header('Location: ../index.php');
     endif;
 endif;

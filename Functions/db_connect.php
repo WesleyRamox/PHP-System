@@ -1,10 +1,10 @@
 <?php
 
 // Conexão
-$server = "localhost";
-$user = "root";
-$pass = "";
-$db_name = "emails";
+$server = "mysql669.umbler.com:41890";
+$user = "wesleyramox";
+$pass = "bWMv7?#h4Pz5";
+$db_name = "youneddhelp";
 
 $connect = mysqli_connect($server, $user, $pass, $db_name);
 mysqli_set_charset($connect, "utf8");
