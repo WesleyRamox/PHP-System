@@ -9,7 +9,7 @@ if(isset($_SESSION['mensagem'])):
 <script>
     // Mensagem
     window.onload = function() {
-        M.toast({html: '<?php echo $_SESSION['mensagem']; ?>'});
+        Materialize.toast('<?php echo $_SESSION['mensagem']; ?>', 4000);
     }
 </script>
 

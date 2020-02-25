@@ -23,10 +23,10 @@ if(isset($_POST['btn-enviar'])):
     $sql = "INSERT INTO emails (email, nome) VALUES ('$email', '$nome') ";
 
     if(mysqli_query($connect, $sql)):
-        $_SESSION['mensagem'] = "Cadastrado com sucesso!";
+        $_SESSION['mensagem'] = "Enviado com sucesso!";
         header('Location: ../index.php');
     else:
-        $_SESSION['menssagem'] = "Erro ao cadastrar";
+        $_SESSION['menssagem'] = "Erro ao Enviar";
         header('Location: ../index.php');
     endif;
 endif;
