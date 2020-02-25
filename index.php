@@ -59,7 +59,7 @@
     <div class="row">
     <form class="col s12 m6 push-m3 emails" method="POST" action="Functions/email.php">
       <div class="row push-m3">
-        <p id="desc1">Está afim de receber E-mails com Mensagens motivadores?</p>
+        <p id="desc1">Está afim de receber E-mails com Mensagens motivadoras?</p>
         <div class="input-field col s12">
         <p class="label" style="color: #ffffff;">Nome:</p>
         <input id="nome" type="text" name="nome" class="validate" required>
@@ -71,7 +71,11 @@
     </form>
     </div>
     </div>
-
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <!-- <div class="ads">
         
     </div> -->
