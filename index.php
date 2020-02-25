@@ -1,3 +1,7 @@
+<?php
+    // Conexão
+    include_once 'Functions/db_connect.php';
+?>
 
 <!DOCTYPE html>
 <html>
@@ -51,11 +55,11 @@
     <div class="row">
     <form class="col s12 m6 push-m3 emails" method="POST" action="Functions/email.php">
       <div class="row push-m3">
-        <p id="desc1">Está afim de receber Emails Motivadores?</p>
+        <p id="desc1">Está afim de receber E-mails com Mensagens motivadores?</p>
         <div class="input-field col s12">
-          <input id="email" type="email" class="validate" required>
+          <input id="email" type="email" name="email" class="validate" required>
           <label for="email">Email</label>
-          <center><button type="submit" class="btn blue ">Enviar</button></center>
+          <input type="submit" class="btn blue" value="Enviar" name="btn-enviar">
         </div>
       </div>
     </form>
