@@ -48,7 +48,7 @@
             <thead>
                 <tr>
                     <img src="./Images/sad.png" id="sad" height="200px;">
-                    <p id="desc">Site criado para ajudar pessoas, porém em específco para quem sofre de depressão e também a motivá-los.</p>
+                    <p id="desc">Site criado para ajudar pessoas, porém em específico para quem sofre de depressão e também a motivá-los.</p>
                 </tr>
                 </thead>
         </table>
